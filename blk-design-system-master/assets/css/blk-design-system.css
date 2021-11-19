@@ -10202,7 +10202,9 @@ button.bg-darker:focus {
 }
 
 .text-primary {
-  color: #db1414de !important;
+  background: -webkit-linear-gradient(#db1414de, #ba54f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 a.text-primary:hover,
@@ -23420,4 +23422,3 @@ input.datetimepicker[data-color="yellow"]
 }
 
 
-/*# sourceMappingURL=kit-free.css.map */
