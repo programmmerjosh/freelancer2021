@@ -1784,10 +1784,33 @@ pre code {
   background-color: rgba(255, 255, 255, 0.075);
 }
 
+/* Joshua van Niekerk Web developer freelancer */
+.collaborate-page .navbar .container .navbar-translate a,
+/* social icons & getting started nav-links */
+.collaborate-page .navbar .container .collapse .navbar-nav .nav-item .nav-link {
+  color: #fd5d93;
+}
+
+/* collapse handlebars for dropdown nav-links */
+.collaborate-page .navbar .container .navbar-translate .navbar-toggler .navbar-toggler-bar {
+  background-color: #fd5d93;
+}
+
+/* goal symmetry button in navbar */
+.collaborate-page .navbar .container .collapse .navbar-nav .nav-item #gs {
+  color: white;
+}
+
 /* josh media query additions */
 @media (max-width: 575.98px) {
   .index-page .page-header :first-child {
     margin-top: 100px;
+  }
+}
+
+@media (max-width: 427.6px) {
+  #pricing-page {
+    height: 150vh;
   }
 }
 
@@ -1855,6 +1878,22 @@ pre code {
   .table-responsive-md > .table-bordered {
     border: 0;
   }
+
+  .collaborate-page .wrapper .page-header {
+    height: 140vh;
+  }
+  .collaborate-page .wrapper .page-header .content-center {
+    padding: 300px 100px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* .collaborate-page .wrapper .page-header {
+    height: 135vh;
+  }
+  .collaborate-page .wrapper .page-header .content-center {
+    padding: 100px 30px;
+  } */
 }
 
 @media (max-width: 991.98px) {
@@ -1867,6 +1906,10 @@ pre code {
   }
   .table-responsive-lg > .table-bordered {
     border: 0;
+  }
+  /* social icons & getting started nav-links */
+  .collaborate-page .navbar .container .collapse .navbar-nav .nav-item .nav-link {
+    color: white;
   }
 }
 
@@ -18585,9 +18628,12 @@ textarea.form-control:active {
   .profile-page .page-header {
     max-height: unset;
   }
-  .collaborate-page .page-header h1,
+  /* .collaborate-page .page-header h1, */
   .disclaimer-page .page-header h1 {
     margin-top: 100px;
+  }
+  .collaborate-page .wrapper .page-header .content-center {
+    padding: 300px 30px;
   }
 }
 
@@ -20481,7 +20527,7 @@ hr.line-deafult {
 [class*="features-"],
 [class*="team-"],
 [class*="projects-"],
-[class*="pricing-"],
+/* [class*="pricing-"], */
 [class*="testimonials-"],
 [class*="contactus-"] {
   padding: 80px 0;
@@ -22701,7 +22747,7 @@ input.datetimepicker[data-color="yellow"]
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   .card.card-coin {
     margin-top: 80px;
   }
@@ -23141,6 +23187,8 @@ input.datetimepicker[data-color="yellow"]
   }
 }
 
+
+
 @media (max-width: 417px) {
   .text-on-back {
     font-size: 4.9em;
@@ -23182,6 +23230,12 @@ input.datetimepicker[data-color="yellow"]
   }
   .profile-page .card .card-header .profile-title {
     top: 58px;
+  }
+  .collaborate-page .wrapper .page-header {
+    height: 140vh;
+  }
+  .collaborate-page .wrapper .page-header .content-center .row .col-12 h1 {
+    font-size: 1.7rem;
   }
 }
 
@@ -23390,7 +23444,7 @@ input.datetimepicker[data-color="yellow"]
 
 
 
-/* animation code */
+/* animation code about page */
 @keyframes bottom-wave-shape {
   0% {left: 0;}
   50% {left: -50%;}
@@ -23420,5 +23474,144 @@ input.datetimepicker[data-color="yellow"]
   color: #1d8cf8;
   font-size: 10rem;
 }
+
+#pricing-page {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 20%, rgba(0, 0, 0, 0.9) 100%), url('../img/ecommerce-4849055.jpg');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  height: 120vh;
+}
+
+#pricing-page .con-con {
+  padding-top: 180px;
+}
+
+@media (max-width: 767px) {
+  #pricing-page .con-con {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #pricing-page .con-con {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 427.6px) {
+  .pricing-page .wrapper .page-header {
+    height: 130vh !important;
+  }
+}
+
+@media (max-width: 381px) {
+  .pricing-page .wrapper .page-header {
+    height: 140vh !important;
+  }
+}
+
+@media (max-width: 343px) {
+  .pricing-page .wrapper .page-header {
+    height: 150vh !important;
+  }
+}
+
+@media (max-width: 311px) {
+  .pricing-page .wrapper .page-header {
+    height: 160vh !important;
+  }
+}
+
+@media (max-width: 300px) {
+  .pricing-page .wrapper .page-header {
+    height: 170vh !important;
+  }
+  .pricing-page .wrapper .page-header .con-con .row .col-12 .btn-wrapper h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 265px) {
+  .pricing-page .wrapper .page-header {
+    height: 185vh !important;
+  }
+}
+
+#choose-website-size {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.custom-shape-divider-bottom-1637431671 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1637431671 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 176px;
+}
+
+.custom-shape-divider-bottom-1637431671 .shape-fill {
+  fill: #171941;
+}
+
+
+.custom-shape-divider-top-1637434206 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1637434206 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1637434206 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1637434516 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1637434516 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 196px;
+}
+
+.custom-shape-divider-bottom-1637434516 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.collaborate-page .wrapper .page-header .content-center .row .col-md-6 .col-12 img {
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+  border: 3px solid #db2dc0;
+}
+
+
 
 

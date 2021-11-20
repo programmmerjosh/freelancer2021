@@ -26,13 +26,21 @@ class MyFooter extends HTMLElement {
                   <h3 class="mb-0">Contact</h3>
                 </div>
               </div>
+
               <div class="modal-body">
                 <div class="btn-wrapper text-center">
                   <!-- could put something here -->
                 </div>
-                <div class="text-center text-muted mb-4 mt-3">
-                  <small>Feel free to ask any questions about my services.</small>
+                <div class="text-left text-muted mb-4 mt-3">
+                  <small class="text-white-50">Feel free to:
+                    <ul>
+                      <li>Ask any questions about my services</li>
+                      <li>Share an app or business idea</li>
+                      <li>Ask for some advice</li>
+                    </ul>
+                  </small>
                 </div>
+                
                 <form class="the-modal-form" role="form">
                   <div class="form-group mb-3">
                     <div class="input-group input-group-alternative">
