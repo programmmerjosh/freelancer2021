@@ -27,8 +27,9 @@
   <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <title>
-    Pricing -> Freelance Services
+    Pricing
   </title>
+  <!-- TODO: custom fav-icon -->
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
@@ -36,8 +37,14 @@
   <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
   <!-- CSS Files -->
   <link href="assets/css/blk-design-system.css" rel="stylesheet" />
-  <!-- CSS Just for demo purpose, don't include it in your project -->
-  <!-- <link href="assets/demo/demo.css" rel="stylesheet" /> -->
+
+  <!-- Import jquery cdn specifically for sending user selected data to the modal -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity=
+"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous">
+</script>
+
   <!-- header template -->
   <script type="module" src="./assets/js/header-template.js"></script>
   <!-- modal + footer template -->
@@ -146,7 +153,9 @@
                 </div>
               </div>
               <div class="card-footer text-center">
-                <button class="btn btn-primary btn-simple" data-toggle="modal" data-target="#myModal4" href="">Get a detailed quote</button>
+                <button id="small-website" class="btn btn-primary btn-simple" data-toggle="modal" data-target="#myModal4" href="" 
+                value="Quotation request.&#13;&#10;&#13;&#10;Proposed website size: SMALL.&#13;&#10;&#13;&#10;Website max budge: £? (Feel free to leave blank).&#13;&#10;&#13;&#10;Website urgency: High / Medium / Low.&#13;&#10;&#13;&#10;Website layout & content: Very elaborate / Elaborate / Detailed enough / Fairly basic / Basic.&#13;&#10;&#13;&#10;Company name: ?"
+                >Request a detailed quote</button>
               </div>
             </div>
           </div>
@@ -172,7 +181,9 @@
                 </div>
               </div>
               <div class="card-footer text-center">
-                <button class="btn btn-success btn-simple" data-toggle="modal" data-target="#myModal4" href="">Get a detailed quote</button>
+                <button id="medium-website" class="btn btn-success btn-simple" data-toggle="modal" data-target="#myModal4" href="" 
+                value="Quotation request.&#13;&#10;&#13;&#10;Proposed website size: MEDIUM.&#13;&#10;&#13;&#10;Website max budge: £? (Feel free to leave blank).&#13;&#10;&#13;&#10;Website urgency: High / Medium / Low.&#13;&#10;&#13;&#10;Website layout & content: Very elaborate / Elaborate / Detailed enough / Fairly basic / Basic.&#13;&#10;&#13;&#10;Company name: ?"
+                >Request a detailed quote</button>
               </div>
             </div>
           </div>
@@ -197,8 +208,12 @@
                   </ul>
                 </div>
               </div>
+
+              <!-- how to add a new line within the value parameter: &#13;&#10; -->
               <div class="card-footer text-center">
-                <button class="btn btn-info btn-simple" data-toggle="modal" data-target="#myModal4" href="">Get a detailed quote</button>
+                <button id="large-website" class="btn btn-info btn-simple" data-toggle="modal" data-target="#myModal4" href="" 
+                value="Quotation request.&#13;&#10;&#13;&#10;Proposed website size: LARGE.&#13;&#10;&#13;&#10;Website max budge: £? (Feel free to leave blank).&#13;&#10;&#13;&#10;Website urgency: High / Medium / Low.&#13;&#10;&#13;&#10;Website layout & content: Very elaborate / Elaborate / Detailed enough / Fairly basic / Basic.&#13;&#10;&#13;&#10;Company name: ?"
+                >Request a detailed quote</button>
               </div>
             </div>
           </div>
@@ -206,7 +221,6 @@
       </div>
     </section>
     
-    <!-- TODO: update modal for quotations -->
     <!-- Form Modal -->
   <div
   class="modal fade modal-black"
@@ -236,9 +250,9 @@
           <!-- could put something here -->
         </div>
         <div class="text-center text-muted mb-4 mt-3">
-        <small class="text-white-50">Unique modal for pricing TODO
-      </small>
-      </div>
+          <small class="text-white-50">Please fill in the form as best as you can. Thank you.
+          </small>
+        </div>
         <form class="the-modal-form" role="form">
           <div class="form-group mb-3">
             <div class="input-group input-group-alternative">
@@ -288,7 +302,7 @@
 
               </div>
 
-              <textarea class="form-control" rows="5" cols="60" name="message" placeholder="Message"></textarea><br>
+              <textarea id="modal-text-area" class="form-control" rows="15" cols="60" name="message" placeholder="Message"></textarea><br>
 
             </div>
           </div>
@@ -306,6 +320,27 @@
   </div>
 </div>
 <!--  End Modal -->
+
+<script type="text/javascript">
+  // modal setup
+  $("#small-website").click(function () {
+      var name = $("#small-website").val();
+      $("#modal-text-area").html(name);
+  });
+
+  $("#medium-website").click(function () {
+      var name = $("#medium-website").val();
+      $("#modal-text-area").html(name);
+  });
+
+  $("#large-website").click(function () {
+      var name = $("#large-website").val();
+      $("#modal-text-area").html(name);
+  });
+</script>
+
+
+
 
   </div>
 
