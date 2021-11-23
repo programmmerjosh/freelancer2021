@@ -9636,6 +9636,11 @@ p.lead {
   transition: transform 1000ms;
 }
 
+.app-dev-icon {
+  font-size: 4.4rem;
+  color: #a540eb;
+}
+
 .fixed-floating-home-button .social-icon {
   background: linear-gradient(#db1414de, #ba54f5);
   text-decoration: none;
@@ -9822,6 +9827,9 @@ section.resume-section .resume-section-content {
   h1 {
     font-size: 4.5rem;
   }
+  .app-dev-icon {
+    font-size: 3.8rem;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -9839,7 +9847,7 @@ section.resume-section .resume-section-content {
 @media (max-width: 1100px) and (min-width: 992px) {
   /* josh josh */
   .carousel-item {
-    height: 560px;
+    height: 575px;
   }
 }
 
@@ -9850,6 +9858,7 @@ section.resume-section .resume-section-content {
   }
   #web-dev, #motivation {
     background-size: 200% auto;
+    background-position: -150% -10%;
     overflow: hidden;
   }
 }
@@ -9859,6 +9868,10 @@ section.resume-section .resume-section-content {
   .show-on-bigger-screens {
     width:360px;
     height:200px;
+  }
+  #motivation {
+    background-size: 230% auto;
+    background-position: -130% -10%;
   }
 }
 
@@ -9881,7 +9894,7 @@ section.resume-section .resume-section-content {
     font-size: 0.7rem;
   }
   .project-img {
-    height: 150px;
+    max-height: 150px;
   }
 
   h1 {
@@ -9889,6 +9902,13 @@ section.resume-section .resume-section-content {
   }
   .subheading {
     font-size: 1.2rem;
+  }
+  .app-dev-icon {
+    font-size: 3.2rem;
+  }
+  #motivation {
+    background-size: 300% auto;
+    background-position: -102% -10%;
   }
 }
 
@@ -9910,23 +9930,26 @@ section.resume-section .resume-section-content {
   h1 {
     font-size: 2.8rem;
   }
-  #motivation {
-    background-size: 260% auto;
-    background-position: -120% -10%;
+  .app-dev-icon {
+    font-size: 2.7rem;
   }
 }
 
 @media (max-width: 496px) {
   /* carousel content height */
   .carousel-item {
-    height: 600px;
+    height: 560px;
+  }
+  #motivation {
+    background-size: 350% auto;
+    background-position: -90% -10%;
   }
 }
 
 @media (max-width: 436px) {
   /* carousel content height */
   .carousel-item {
-    height: 660px;
+    height: 580px;
   }
   #web-dev {
     background-size: 260% auto;
@@ -9934,7 +9957,7 @@ section.resume-section .resume-section-content {
 }
 
 @media (max-width: 423px) {
-  h1 {
+  h1, .app-dev-icon {
     font-size: 2.2rem;
   }
 }
@@ -9943,7 +9966,7 @@ section.resume-section .resume-section-content {
 @media (max-width: 414px) {
   /* josh josh */
   .carousel-item {
-    height: 620px;
+    height: 600px;
   }
   .carousel-item {
     padding: 0 15px;
@@ -9973,27 +9996,25 @@ section.resume-section .resume-section-content {
     width: auto;
     height: 80px;
   }
+}
+
+@media (max-width: 404px) {
   #motivation {
-    background-size: 300% auto;
+    background-size: 400% auto;
+    background-position: -85% -10%;
   }
 }
 
-@media (max-width: 381px) {
-  /* carousel content height */
-  .carousel-item {
-    height: 650px;
-  }
-}
 
 @media (max-width: 358px) {
   #motivation {
-    background-size: 350% auto;
-    background-position: -90% -10%;
+    background-size: 500% auto;
+    background-position: -70% -10%;
   }
 }
 
 @media (max-width: 350px) {
-  h1 {
+  h1, .app-dev-icon {
     font-size: 1.9rem;
   }
   .subheading {
@@ -10025,7 +10046,7 @@ section.resume-section .resume-section-content {
     height: 60px;
   }
   .carousel-item {
-    height: 640px;
+    height: 550px;
   }
   li.list-inline-item {
     font-size: 0.6rem;
@@ -10042,17 +10063,14 @@ section.resume-section .resume-section-content {
 }
 
 @media (max-width: 306px) {
-  /* carousel content height */
-  .carousel-item {
-    height: 670px;
-  }
   #motivation {
-    background-size: 390% auto;
+    background-size: 550% auto;
+    background-position: -60% -10%;
   }
 }
 
 @media (max-width: 289px) {
-  h1 {
+  h1, .app-dev-icon {
     font-size: 1.4rem;
   }
   .subheading {
