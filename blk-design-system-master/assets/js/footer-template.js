@@ -41,7 +41,16 @@ class MyFooter extends HTMLElement {
                   </small>
                 </div>
                 
-                <form class="the-modal-form" role="form">
+                <form 
+                class="the-modal-form validate" 
+                role="form"
+                action="https://developerforlife.us1.list-manage.com/subscribe/post?u=392d54d4663206b796a76e85d&amp;id=24d63429cf" 
+                method="post" 
+                id="mc-embedded-subscribe-form" 
+                name="mc-embedded-subscribe-form" 
+                target="_blank" 
+                novalidate
+                >
                   <div class="form-group mb-3">
                     <div class="input-group input-group-alternative">
                       <div class="my-input-item">
@@ -56,6 +65,9 @@ class MyFooter extends HTMLElement {
                         class="form-control"
                         placeholder="Name"
                         type="name"
+                        name="NAME" 
+                        class="required" 
+                        id="mce-NAME"
                       />
   
                     </div>
@@ -72,9 +84,11 @@ class MyFooter extends HTMLElement {
                       </div>
   
                       <input
-                        class="form-control"
+                        class="form-control required email"
                         placeholder="Email address"
-                        type="email"
+                        type="email" 
+                        name="EMAIL" 
+                        id="mce-EMAIL"
                       />
   
                     </div>
@@ -90,15 +104,32 @@ class MyFooter extends HTMLElement {
   
                       </div>
   
-                      <textarea class="form-control" rows="5" cols="60" name="message" placeholder="Message"></textarea><br>
+                      <textarea 
+                      class="form-control required" 
+                      rows="5" cols="60" 
+                      placeholder="Message"
+                      name="MESSAGE"  
+                      id="mce-MESSAGE"
+                      >
+                      </textarea><br>
   
                     </div>
                   </div>
                   <div class="form-check mt-3">
                     
                   </div>
+                  <div id="mce-responses" class="clear foot">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                  </div> 
+
                   <div class="text-center">
-                    <button type="button" class="btn btn-primary my-4">
+                    <button 
+                    type="button" 
+                    class="btn btn-primary my-4"
+                    name="subscribe" 
+                    id="mc-embedded-subscribe"
+                    >
                       Send
                     </button>
                   </div>
@@ -136,7 +167,7 @@ class MyFooter extends HTMLElement {
                 </a>
               </li>
               <li class="nav-item">
-                <a href="resume" class="nav-link">
+                <a href="https://www.joshua-resume.com" class="nav-link">
                   ResumÉ
                 </a>
               </li>
@@ -155,7 +186,7 @@ class MyFooter extends HTMLElement {
                 </a>
               </li>
               <li class="nav-item">
-                <a href="blog" class="nav-link">
+                <a href="https://www.think-write-grow.com" class="nav-link">
                   Blog
                 </a>
               </li>

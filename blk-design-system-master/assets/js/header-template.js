@@ -12,7 +12,7 @@ class MyHeader extends HTMLElement {
             <div id="scroll-navigate" class="navbar-translate">
               <a
                 class="navbar-brand"
-                href="#page-top"
+                href="/"
                 rel="tooltip"
                 title="Typical stack: Bootstrap, HTML, CSS & jQuery"
                 data-placement="bottom"
@@ -113,8 +113,8 @@ class MyHeader extends HTMLElement {
                     <a href="collaborate" class="dropdown-item">
                       <i class="tim-icons icon-bullet-list-67"></i>Collaborate
                     </a>
-                    <a href="motivation" class="dropdown-item">
-                      <i class="tim-icons icon-image-02"></i>Motivation
+                    <a href="https://www.think-write-grow.com" class="dropdown-item">
+                      <i class="tim-icons icon-image-02"></i>Blog
                     </a>
                     <a href="about" class="dropdown-item">
                       <i class="tim-icons icon-single-02"></i>About

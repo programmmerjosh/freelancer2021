@@ -49,6 +49,7 @@
   <!-- modal + footer template -->
   <script type="module" src="./assets/js/footer-template.js"></script>
 
+  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/392d54d4663206b796a76e85d/15cd0467f0aeee162916776fc.js");</script>
 </head>
 
 <body class="pricing-page">
@@ -252,7 +253,16 @@
           <small class="text-white-50">Please fill in the form as best as you can. Thank you.
           </small>
         </div>
-        <form class="the-modal-form" role="form">
+        <form 
+        class="the-modal-form" 
+        role="form"
+        action="https://developerforlife.us1.list-manage.com/subscribe/post?u=392d54d4663206b796a76e85d&amp;id=24d63429cf" 
+        method="post" 
+        id="mc-embedded-subscribe-form" 
+        name="mc-embedded-subscribe-form" 
+        target="_blank" 
+        novalidate
+        >
           <div class="form-group mb-3">
             <div class="input-group input-group-alternative">
               <div class="my-input-item">
@@ -264,9 +274,12 @@
               </div>
 
               <input
-                class="form-control"
-                placeholder="Name"
-                type="name"
+              class="form-control"
+              placeholder="Name"
+              type="name"
+              name="NAME" 
+              class="required" 
+              id="mce-NAME"
               />
 
             </div>
@@ -283,9 +296,11 @@
               </div>
 
               <input
-                class="form-control"
-                placeholder="Email address"
-                type="email"
+              class="form-control required email"
+              placeholder="Email address"
+              type="email" 
+              name="EMAIL" 
+              id="mce-EMAIL"
               />
 
             </div>
@@ -301,15 +316,28 @@
 
               </div>
 
-              <textarea id="modal-text-area" class="form-control" rows="15" cols="60" name="message" placeholder="Message"></textarea><br>
+              <textarea
+              class="form-control required modal-text-area" 
+              rows="15" cols="60" 
+              placeholder="Message"
+              name="MESSAGE"  
+              id="mce-MESSAGE"
+              ></textarea><br>
 
             </div>
           </div>
           <div class="form-check mt-3">
             
           </div>
+          <div id="mce-responses" class="clear foot">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div> 
+
           <div class="text-center">
-            <button type="button" class="btn btn-primary my-4">
+            <button type="button" class="btn btn-primary my-4" 
+            name="subscribe" 
+            id="mc-embedded-subscribe">
               Send
             </button>
           </div>
