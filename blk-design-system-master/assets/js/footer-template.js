@@ -154,7 +154,7 @@ class MyFooter extends HTMLElement {
           <div class="col-md-3">
             <ul class="nav">
               <li id="scroll-navigate" class="nav-item">
-                <a href="#page-top" class="nav-link"> Home </a>
+                <a href="../../" class="nav-link"> Home </a>
               </li>
               <li class="nav-item">
                 <a href="pricing" class="nav-link">

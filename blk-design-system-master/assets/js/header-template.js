@@ -6,8 +6,7 @@ class MyHeader extends HTMLElement {
         <!-- Navbar => DONE -->
         <nav
           class="navbar navbar-expand-lg fixed-top navbar-transparent bg-neutral"
-          color-on-scroll="100"
-        >
+          color-on-scroll="100">
           <div class="container">
             <div id="scroll-navigate" class="navbar-translate">
               <a
@@ -123,6 +122,7 @@ class MyHeader extends HTMLElement {
                 </li>
                 <li class="nav-item">
                   <a
+                    id="gs" 
                     class="nav-link btn btn-default d-none d-lg-block"
                     rel="tooltip"
                     title="I'm is also the creator of Goal Symmetry and Founder of Sagacious Apps"

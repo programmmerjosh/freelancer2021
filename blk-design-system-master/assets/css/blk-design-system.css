@@ -23479,11 +23479,21 @@ input.datetimepicker[data-color="yellow"]
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 20%, rgba(0, 0, 0, 0.9) 100%), url('../img/ecommerce-4849055.jpg');
   background-size: 100% 100%;
   background-attachment: fixed;
-  height: 120vh;
+  min-height: 100vh;
+}
+
+.pricing-page .wrapper .page-header {
+  height: 750px !important;
 }
 
 #pricing-page .con-con {
   padding-top: 180px;
+}
+
+@media (max-width: 991px) {
+  .pricing-page .wrapper .page-header {
+    height: 900px !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -23499,42 +23509,55 @@ input.datetimepicker[data-color="yellow"]
   }
 }
 
+@media (max-width: 471px) {
+  .pricing-page .wrapper .page-header {
+    height: 1000px !important;
+  }
+}
+
 @media (max-width: 427.6px) {
   .pricing-page .wrapper .page-header {
-    height: 130vh !important;
+    height: 1050px !important;
   }
 }
 
 @media (max-width: 381px) {
   .pricing-page .wrapper .page-header {
-    height: 140vh !important;
+    height: 1120px !important;
   }
 }
 
 @media (max-width: 343px) {
   .pricing-page .wrapper .page-header {
-    height: 150vh !important;
+    height: 1180px !important;
   }
 }
 
 @media (max-width: 311px) {
   .pricing-page .wrapper .page-header {
-    height: 160vh !important;
+    height: 1250px !important;
   }
 }
 
 @media (max-width: 300px) {
   .pricing-page .wrapper .page-header {
-    height: 170vh !important;
+    height: 1300px !important;
   }
   .pricing-page .wrapper .page-header .con-con .row .col-12 .btn-wrapper h3 {
     font-size: 1.2rem;
   }
 }
 
-@media (max-width: 265px) {
+@media (max-width: 285px) {
   .pricing-page .wrapper .page-header {
-    height: 185vh !important;
+    height: 1420px !important;
+  }
+}
+
+@media (max-width: 263px) {
+  .pricing-page .wrapper .page-header {
+    height: 1520px !important;
+    overflow: hidden;
   }
 }
 

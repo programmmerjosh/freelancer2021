@@ -1,1 +1,145 @@
-class MyHeader extends HTMLElement{connectedCallback(){this.innerHTML='\n        \x3c!-- JOSH USING --\x3e\n        \x3c!-- Navbar => DONE --\x3e\n        <nav\n          class="navbar navbar-expand-lg fixed-top navbar-transparent bg-neutral"\n          color-on-scroll="100"\n        >\n          <div class="container">\n            <div id="scroll-navigate" class="navbar-translate">\n              <a\n                class="navbar-brand"\n                href="/"\n                rel="tooltip"\n                title="Typical stack: Bootstrap, HTML, CSS & jQuery"\n                data-placement="bottom"\n              >\n                <div\n                  id="joshua-van-niekerk"\n                  class="d-block d-sm-inline font-weight-bold"\n                  color-on-scroll="100"\n                >\n                  Joshua van Niekerk•\n                </div>\n                <div\n                  id="web-dev-freelancer"\n                  class="d-inline text-wrap"\n                  color-on-scroll="100"\n                >\n                  Web Developer Freelancer\n                </div>\n              </a>\n              <button\n                class="navbar-toggler navbar-toggler"\n                type="button"\n                data-toggle="collapse"\n                data-target="#navigation"\n                aria-controls="navigation-index"\n                aria-expanded="false"\n                aria-label="Toggle navigation"\n              >\n                <span class="navbar-toggler-bar bar1" color-on-scroll="100"></span>\n                <span class="navbar-toggler-bar bar2" color-on-scroll="100"></span>\n                <span class="navbar-toggler-bar bar3" color-on-scroll="100"></span>\n              </button>\n            </div>\n            <div\n              class="collapse navbar-collapse justify-content-end"\n              id="navigation"\n            >\n              <div class="navbar-collapse-header">\n                <div class="row">\n                  <div class="col-6 collapse-brand">\n                    <a id="navbar-collapse-heading" color-on-scroll="100"> Freelancer </a>\n                  </div>\n                  <div class="col-6 collapse-close text-right">\n                    <button\n                      type="button"\n                      class="navbar-toggler"\n                      data-toggle="collapse"\n                      data-target="#navigation"\n                      aria-controls="navigation-index"\n                      aria-expanded="false"\n                      aria-label="Toggle navigation"\n                    >\n                      <i id="navbar-collapse-heading" class="tim-icons icon-simple-remove" color-on-scroll="100"></i>\n                    </button>\n                  </div>\n                </div>\n              </div>\n              <ul class="navbar-nav">\n                <li class="nav-item p-0">\n                  <a\n                    class="nav-link"\n                    rel="tooltip"\n                    title="View some of my projects"\n                    data-placement="bottom"\n                    href="https://github.com/programmmerjosh" \n                    target="_blank"\n                  >\n                    <i id="nav-link-social-media-icon" class="fab fa-github" color-on-scroll="100"></i>\n                    <p id="nav-link-social-media-text" class="d-lg-none d-xl-none" color-on-scroll="100">GitHub</p>\n                  </a>\n                </li>\n                <li class="nav-item p-0">\n                  <a\n                    class="nav-link"\n                    rel="tooltip"\n                    title="Follow me on Instagram"\n                    data-placement="bottom"\n                    href="https://www.instagram.com/josh_kenneth101/" target="_blank"\n                  >\n                    <i id="nav-link-social-media-icon" class="fab fa-instagram" color-on-scroll="100"></i>\n                    <p id="nav-link-social-media-text" class="d-lg-none d-xl-none" color-on-scroll="100">Instagram</p>\n                  </a>\n                </li>\n                <li class="dropdown nav-item">\n                  <a\n                    id="nav-link-getting-started"\n                    href="#"\n                    class="dropdown-toggle nav-link"\n                    data-toggle="dropdown"\n                    color-on-scroll="100"\n                  >\n                    <i class="fa fa-cogs d-lg-none d-xl-none"></i> Getting started\n                  </a>\n                  <div class="dropdown-menu dropdown-with-icons">\n                    <a href="pricing" class="dropdown-item">\n                      <i class="tim-icons icon-paper"></i>Pricing\n                    </a>\n                    <a href="collaborate" class="dropdown-item">\n                      <i class="tim-icons icon-bullet-list-67"></i>Collaborate\n                    </a>\n                    <a href="https://www.think-write-grow.com" class="dropdown-item">\n                      <i class="tim-icons icon-image-02"></i>Blog\n                    </a>\n                    <a href="about" class="dropdown-item">\n                      <i class="tim-icons icon-single-02"></i>About\n                    </a>\n                  </div>\n                </li>\n                <li class="nav-item">\n                  <a\n                    class="nav-link btn btn-default d-none d-lg-block"\n                    rel="tooltip"\n                    title="I\'m is also the creator of Goal Symmetry and Founder of Sagacious Apps"\n                    data-placement="bottom"\n                    href="https://www.sagaciousapps.com/apps" target="_blank"\n                  >\n                    <i class="tim-icons icon-mobile"></i> Goal Symmetry\n                  </a>\n                </li>\n              </ul>\n            </div>\n          </div>\n        </nav>\n        \x3c!-- End Navbar --\x3e\n\n'}}customElements.define("my-header",MyHeader);
+class MyHeader extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = 
+        `
+        <!-- JOSH USING -->
+        <!-- Navbar => DONE -->
+        <nav
+          class="navbar navbar-expand-lg fixed-top navbar-transparent bg-neutral"
+          color-on-scroll="100">
+          <div class="container">
+            <div id="scroll-navigate" class="navbar-translate">
+              <a
+                class="navbar-brand"
+                href="/"
+                rel="tooltip"
+                title="Typical stack: Bootstrap, HTML, CSS & jQuery"
+                data-placement="bottom"
+              >
+                <div
+                  id="joshua-van-niekerk"
+                  class="d-block d-sm-inline font-weight-bold"
+                  color-on-scroll="100"
+                >
+                  Joshua van Niekerk•
+                </div>
+                <div
+                  id="web-dev-freelancer"
+                  class="d-inline text-wrap"
+                  color-on-scroll="100"
+                >
+                  Web Developer Freelancer
+                </div>
+              </a>
+              <button
+                class="navbar-toggler navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navigation"
+                aria-controls="navigation-index"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-bar bar1" color-on-scroll="100"></span>
+                <span class="navbar-toggler-bar bar2" color-on-scroll="100"></span>
+                <span class="navbar-toggler-bar bar3" color-on-scroll="100"></span>
+              </button>
+            </div>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navigation"
+            >
+              <div class="navbar-collapse-header">
+                <div class="row">
+                  <div class="col-6 collapse-brand">
+                    <a id="navbar-collapse-heading" color-on-scroll="100"> Freelancer </a>
+                  </div>
+                  <div class="col-6 collapse-close text-right">
+                    <button
+                      type="button"
+                      class="navbar-toggler"
+                      data-toggle="collapse"
+                      data-target="#navigation"
+                      aria-controls="navigation-index"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <i id="navbar-collapse-heading" class="tim-icons icon-simple-remove" color-on-scroll="100"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <ul class="navbar-nav">
+                <li class="nav-item p-0">
+                  <a
+                    class="nav-link"
+                    rel="tooltip"
+                    title="View some of my projects"
+                    data-placement="bottom"
+                    href="https://github.com/programmmerjosh" 
+                    target="_blank"
+                  >
+                    <i id="nav-link-social-media-icon" class="fab fa-github" color-on-scroll="100"></i>
+                    <p id="nav-link-social-media-text" class="d-lg-none d-xl-none" color-on-scroll="100">GitHub</p>
+                  </a>
+                </li>
+                <li class="nav-item p-0">
+                  <a
+                    class="nav-link"
+                    rel="tooltip"
+                    title="Follow me on Instagram"
+                    data-placement="bottom"
+                    href="https://www.instagram.com/josh_kenneth101/" target="_blank"
+                  >
+                    <i id="nav-link-social-media-icon" class="fab fa-instagram" color-on-scroll="100"></i>
+                    <p id="nav-link-social-media-text" class="d-lg-none d-xl-none" color-on-scroll="100">Instagram</p>
+                  </a>
+                </li>
+                <li class="dropdown nav-item">
+                  <a
+                    id="nav-link-getting-started"
+                    href="#"
+                    class="dropdown-toggle nav-link"
+                    data-toggle="dropdown"
+                    color-on-scroll="100"
+                  >
+                    <i class="fa fa-cogs d-lg-none d-xl-none"></i> Getting started
+                  </a>
+                  <div class="dropdown-menu dropdown-with-icons">
+                    <a href="pricing" class="dropdown-item">
+                      <i class="tim-icons icon-paper"></i>Pricing
+                    </a>
+                    <a href="collaborate" class="dropdown-item">
+                      <i class="tim-icons icon-bullet-list-67"></i>Collaborate
+                    </a>
+                    <a href="https://www.think-write-grow.com" class="dropdown-item">
+                      <i class="tim-icons icon-image-02"></i>Blog
+                    </a>
+                    <a href="about" class="dropdown-item">
+                      <i class="tim-icons icon-single-02"></i>About
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a
+                    id="gs" 
+                    class="nav-link btn btn-default d-none d-lg-block"
+                    rel="tooltip"
+                    title="I'm is also the creator of Goal Symmetry and Founder of Sagacious Apps"
+                    data-placement="bottom"
+                    href="https://www.sagaciousapps.com/apps" target="_blank"
+                  >
+                    <i class="tim-icons icon-mobile"></i> Goal Symmetry
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- End Navbar -->
+
+`
+    }
+}
+
+customElements.define('my-header', MyHeader);
