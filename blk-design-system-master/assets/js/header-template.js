@@ -76,10 +76,10 @@ class MyHeader extends HTMLElement {
                     rel="tooltip"
                     title="View some of my projects"
                     data-placement="bottom"
-                    href="https://github.com/programmmerjosh" 
+                    href="https://www.joshua-resume.com/#projects" 
                     target="_blank"
                   >
-                    <i id="nav-link-social-media-icon" class="fab fa-github" color-on-scroll="100"></i>
+                    <i id="nav-link-social-media-icon" class="fas fa-tasks" color-on-scroll="100"></i>
                     <p id="nav-link-social-media-text" class="d-lg-none d-xl-none" color-on-scroll="100">GitHub</p>
                   </a>
                 </li>
