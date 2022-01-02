@@ -113,7 +113,7 @@ class MyHeader extends HTMLElement {
                       <i class="tim-icons icon-bullet-list-67"></i>Collaborate
                     </a>
                     <a href="https://www.think-write-grow.com" class="dropdown-item">
-                      <i class="tim-icons icon-image-02"></i>Blog
+                      <i class="tim-icons icon-image-02"></i>Truth & Critical Thinking
                     </a>
                     <a href="about" class="dropdown-item">
                       <i class="tim-icons icon-single-02"></i>About

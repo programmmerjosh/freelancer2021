@@ -187,7 +187,7 @@ class MyFooter extends HTMLElement {
               </li>
               <li class="nav-item">
                 <a href="https://www.think-write-grow.com" class="nav-link">
-                  Blog
+                  Truth & Critical Thinking
                 </a>
               </li>
               <li class="nav-item">
